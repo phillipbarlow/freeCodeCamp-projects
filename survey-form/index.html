@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey form</title>
+</head>
+<body>
+    <main> 
+            <h1 id="title">Survey form</h1>
+            <p class="sub-heading" id="description"> <i>Thank you for taking the time to take my survey.</i></p>
+            <div class="wrapper">
+                <form id="survey-form">
+                    <div class="personal-info">
+                        <label for="name" id="name-label">Name:<br>
+                            <input type="text" id="name" name="name" onfocus="value=''" placeholder="name" required>
+                        </label>
+                        <label for="email" id="email-label">Email:<br>
+                            <input type="email" id="email" name="email" onfocus="value=''" placeholder="email" required>
+                        </label>
+                        <label for="number" id="number-label">Age (optional)<br>
+                            <input type="number" name="age" value="Age" id="number" min="10" max="99" placeholder="age" required>
+                        </label>
+                    </div>
+                    <div class="radio-group">
+                        <p>Would you recommend us to your friends?</p>
+                        <label for="definitely" class="radio">
+                            <input type="radio" name="option" id="definitely" class="definitely" value="definitely" checked class="radio">Definitely
+                        </label>
+                        <label for="maybe" class="radio">
+                            <input type="radio" name="option" id="maybe" value="maybe">Maybe
+                        </label>
+                        <label for="notsure" class="radio">
+                            <input type="radio" name="option" id="notsure" value="notsure">Not sure
+                        </label>
+                    </div>
+                    <div class="find-us">
+                        <label for="find"> Where did you find us? </label>
+                        <select name="find" id="dropdown">
+                            <option value="google">google</option>
+                            <option value="recommendation">recommendation</option>
+                            <option value="yahoo">yahoo</option>
+                        </select>
+                    </div>
+                    <div class="improve">
+                        <p> Where could we improve?</p>
+                        <div class="customer-input">
+                            <label for="customer-service">
+                                <input type="checkbox" id="customer-service" name="customer-service" value="customer-service">
+                                Customer Service</label>
+                        </div>
+                        <div class="customer-input">
+                            <label for="product">
+                                <input type="checkbox" id="product" name="product" value="product">
+                                Product</label>
+                        </div>
+                    </div>
+                    <div class="comment-section">
+                        <p>Any comments or suggestions?</p>
+                        <textarea rows="8" cols="60" name="comment" form="survey-form" placeholder="Enter text here ..."></textarea>
+                    </div>
+                    <input type="submit" id="submit">
+                </form>
+            </div>   
+            
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html> 

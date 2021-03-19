@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "roboto";
+  src: url(fonts/roboto/Roboto-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: roboto;
+}
+html {
+  font-family: sans-serif;
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: #3590ae;
+}
+main::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: -300px;
+  left: 0px;
+  background-image: url(images/background-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+}
+
+#title {
+  position: relative;
+  text-align: center;
+  padding: 20px 0px;
+  color: #fff;
+  font-weight: 400;
+}
+#description {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+#survey-form {
+  position: relative;
+  color: white;
+}
+.wrapper {
+  max-width: 30%;
+  min-height: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #235e71;
+  border-radius: 30px;
+}
+.personal-info label input {
+  width: 100%;
+  display: block;
+  padding: 5px;
+  margin: 10px 0px;
+  border-radius: 8px;
+}
+.radio-group .radio {
+  display: block;
+  margin-top: 15px;
+}
+.radio-group input {
+  margin-right: 10px;
+}
+.find-us {
+  margin: 15px 0px;
+}
+.find-us,
+select {
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  margin-top: 5px;
+}
+.customer-input {
+  display: block;
+  margin: 15px 0px;
+}
+.comment-section textarea {
+  border-radius: 5px;
+  max-width: 100%;
+  padding: 10px;
+  font-weight: 700;
+}
+label,
+input,
+select,
+textarea {
+  cursor: pointer;
+}
+input[type="submit"] {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d8e6ad;
+}
