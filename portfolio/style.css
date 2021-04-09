@@ -223,9 +223,6 @@ nav a {
   padding: 15px;
   text-align: justify;
 }
-/* .about-me p:nth-child(4) {
-  padding-bottom: 0px;
-} */
 .about-me h1,
 footer h2 {
   color: #fff;
@@ -313,8 +310,10 @@ nav li a:hover {
   }
   header {
     display: flex;
+    position: static;
     flex-direction: column;
     height: 400px;
+    width: 100%;
   }
   header nav ul {
     display: flex;
@@ -324,7 +323,6 @@ nav li a:hover {
   header nav {
     height: 100%;
     width: 100%;
-    border-bottom: solid 3px #fff;
   }
   header a {
     font-size: 2em;
@@ -356,9 +354,20 @@ nav li a:hover {
   .about-me p {
     width: 100%;
   }
+  .about-me {
+    margin-bottom: 30px;
+    height: 500px;
+    overflow-y: scroll;
+  }
   .icon-container {
     display: flex;
     flex-direction: column;
     border-top: solid 3px #fff;
+  }
+  footer {
+    height: 600px;
+  }
+  .icon-container {
+    border: none;
   }
 }
